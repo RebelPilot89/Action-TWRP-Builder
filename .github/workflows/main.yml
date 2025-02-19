@@ -112,8 +112,8 @@ jobs:
       id: pwd
 
     - name: Modify default.xml
-  run: |
-    sed -i 's/revision="android-14"/revision="android-14.1"/g' workspace/.repo/manifests/default.xml
+      run: |
+        sed -i 's/revision="android-14"/revision="android-14.1"/g' workspace/.repo/manifests/default.xml
 
     - name: Repo Sync
       run: |
